@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import Navbar from "./Navbar";
+import type { ReactNode } from "react";
+import Navbar from "./NavBar";
 import { useAuth } from "@/context/AuthContext";
 import { Navigate } from "react-router-dom";
 

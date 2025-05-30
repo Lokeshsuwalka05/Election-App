@@ -6,7 +6,7 @@ export interface Voter {
   houseNumber: string;
   age: number;
   gender: 'Male' | 'Female' | 'Other';
-  partNumber: string;
+  voterId: string;
   photoUrl?: string;
 }
 

@@ -17,9 +17,9 @@ const VoterCard = ({ voter }: VoterCardProps) => {
             <Badge variant="outline" className="bg-primary/10 text-primary font-semibold">
               Serial #{voter.serialNumber}
             </Badge>
-            <Badge variant="outline" className="bg-secondary text-secondary-foreground">
+            {/* <Badge variant="outline" className="bg-secondary text-secondary-foreground">
               Part {voter.partNumber}
-            </Badge>
+            </Badge> */}
           </div>
           
           <div className="space-y-3">

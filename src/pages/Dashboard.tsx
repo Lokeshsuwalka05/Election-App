@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import DashboardLayout from "@/components/layout/Dashboard";
 import SearchBar from "@/components/voter/SearchBar";
 import VoterList from "@/components/voter/VoterList";
-import type { Voter } from "@/utils/types";
+// import type { Voter } from "@/utils/types";
 import { toast } from "sonner";
 import { Search, Bookmark, Users, HelpCircle } from "lucide-react";
 import { fetchVotersByName, testDatabaseConnection } from "@/utils/supabaseClient";

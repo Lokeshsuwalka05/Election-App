@@ -31,12 +31,12 @@ export async function fetchVotersByName(name: string): Promise<Voter[]> {
     return data.map(voter => ({
       id: voter.id,
       serialNumber: voter.serial_number,
-      voterId: voter.voter_id,
       name: voter.name,
-      fatherHusbandName: voter.father_husband_name,
+      fatherName: voter.father_husband_name,
       houseNumber: voter.house_number,
       age: voter.age,
-      gender: (voter.gender as 'Male' | 'Female' | 'Other') || 'Other'
+      gender: (voter.gender as 'Male' | 'Female' | 'Other') || 'Other',
+      voterId: voter.voter_id
     }));
   } catch (error) {
     console.error('Error in fetchVotersByName:', error);
@@ -69,12 +69,12 @@ export async function fetchVoterById(id: string): Promise<Voter | null> {
     return {
       id: data.id,
       serialNumber: data.serial_number,
-      voterId: data.voter_id,
       name: data.name,
-      fatherHusbandName: data.father_husband_name,
+      fatherName: data.father_husband_name,
       houseNumber: data.house_number,
       age: data.age,
-      gender: (data.gender as 'Male' | 'Female' | 'Other') || 'Other'
+      gender: (data.gender as 'Male' | 'Female' | 'Other') || 'Other',
+      voterId: data.voter_id
     };
   } catch (error) {
     console.error('Error in fetchVoterById:', error);
